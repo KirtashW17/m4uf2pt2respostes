@@ -1,0 +1,21 @@
+<details>
+    <summary>Respuesta pregunta 1: Llista els autors amb data de publicació de les seves obres al 2003.</summary>
+    <br><strong>XPATH: </strong> //book[year=2003]/author/text()<br>
+    <br><strong>Output:</strong><br>Text='James McGovern' <br>
+                   Text='Per Bothner' <br>
+                   Text='Kurt Cagle' <br>
+                   Text='James Linn' <br>
+                   Text='Vaidyanathan Nagarajan' <br>
+                   Text='Erik T. Ray' <br>
+</details>
+<br>
+<details>
+    <summary>Respuesta pregunta 2: Volem saber el preu dels llibres amb coberta “paperback” i el nom de l’autor/a d’aquestes obres. Només aquestes dades!</summary>
+        <br><strong>XPATH: </strong>//book[@cover='paperback']/price | //book[@cover='paperback']/author<br>
+        <br><strong>Output:</strong><br>Text='James McGovern' <br>
+                   Element='<author>Erik T. Ray</author>' <br>
+                   Element='<price>39.95</price>' <br>
+</details>
+
+
+
