@@ -59,6 +59,27 @@
     Text='Learning XML'
   </details>
 
+  Llista el títol i el nom del escritor de tots els llibres el preu dels cuals sigui inferior a 40€
+  <h3>Preguntes de Thomas Scalise</h3>
+  <details>
+    <summary>Pregunta 1: Llista el títol i el nom del escritor de tots els llibres el preu dels cuals sigui inferior a 40€</summary>
+    <br><strong>XPATH: </strong> //book[price&lt;40]/title | //book[price&lt;40]/author<br>
+    <br><strong>Output:</strong> <br>
+    Element='&lt;title lang="en"&gt;Everyday Italian&lt;/title&gt;' <br>
+    Element='&lt;author&gt;Giada De Laurentiis&lt;/author&gt;'<br>
+    Element='&lt;title lang="en"&gt;Harry Potter&lt;/title&gt;'<br>
+    Element='&lt;author&gt;J K. Rowling&lt;/author&gt;'<br>
+    Element='&lt;title lang="en"&gt;Learning XML&lt;/title&gt;'<br>
+    Element='&lt;author&gt;Erik T. Ray&lt;/author&gt;'<br>
+  </details>
+  <br>
+  <details>
+    <summary>Pregunta 2: Obté el títol i el tipus de portada (cover) dels llibres que hagi escrit ‘Erik T. Ray’ a l’any 2003.</summary>
+    <br><strong>XPATH: </strong> //book[author='Erik T. Ray' and year=2003]/title | //book[author='Erik T. Ray' and year=2003]/@cover<br>
+    <br><strong>Output:</strong> <br>
+    Attribute='cover=paperback'
+    Element='&lt;title lang="en"&gt;Learning XML&lt;/title&gt;'
+  </details>
 
 
 
