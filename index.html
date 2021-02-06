@@ -43,6 +43,21 @@
     String='59.99'
   </details>
 
+  <h3>Preguntes de Alberto del Pozo</h3>
+  <details>
+    <summary>Pregunta 1: Lista los autores que publicaron después del 2003 y que su precio sea superior a 29,99€</summary>
+    <br><strong>XPATH: </strong> //book[year>2003 and price>29.99]/author/text()<br>
+    <br><strong>Output:</strong> <br>
+    Text='Giada De Laurentiis'
+  </details>
+  <br>
+  <details>
+    <summary>Pregunta 2: Muestra los libros con categoría "children" y categoría "web" , pero que estos últimos tengan tapa "paperback"</summary>
+    <br><strong>XPATH: </strong> //book[@category='children']/title/text() | //book[@category='web' and @cover='paperback']/title/text()<br>
+    <br><strong>Output:</strong> <br>
+    Text='Harry Potter'
+    Text='Learning XML'
+  </details>
 
 
 
