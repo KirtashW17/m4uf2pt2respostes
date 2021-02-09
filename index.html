@@ -112,6 +112,29 @@
     Int64='6'
   </details>
 
+  <h3>Preguntes de Pau Bayer</h3>
+  <details>
+    <summary>Pregunta 1: Dona’m el nom, l’any i títol dels llibres que costen més de 30’90€.</summary>
+    <br><strong>XPATH: </strong> //book[price>30.90]/title | //book[price>30.90]/year | //book[price>30.90]/price <br>
+    <br><strong>Output:</strong> <br>
+    Element='&lt;title lang="en">XQuery Kick Start&lt;/title>' <br>
+    Element='&lt;year>2003&lt;/year>' <br>
+    Element='&lt;price>49.99&lt;/price>'<br>
+    Element='&lt;title lang="en">Learning XML&lt;/title>' <br>
+    Element='&lt;year>2003&lt;/year>' <br>
+    Element='&lt;price>39.95&lt;/price>' <br>
+  </details>
+  <br>
+  <details>
+    <summary>Pregunta 2: Digues-me l’autor i el preu dels llibres publicats més tard del 2004. </summary>
+    <br><strong>XPATH: </strong> //book[year > 2004]/author | //book[year > 2004]/price <br>
+    <br><strong>Output:</strong> <br>
+    Element='&lt;author>Giada De Laurentiis&lt;/author>'
+    Element='&lt;price>30.00&lt;/price>'
+    Element='&lt;author>J K. Rowling&lt;/author>'
+    Element='&lt;price>29.99&lt;/price>'
+  </details>
+
   <h3>Preguntes de Thomas Scalise</h3>
   <details>
     <summary>Pregunta 1: Llista el títol i el nom del escritor de tots els llibres el preu dels cuals sigui inferior a 40€</summary>
