@@ -79,6 +79,23 @@
     Int64='7'
   </details>
 
+  <h3>Preguntes de Mario Rico</h3>
+  <details>
+    <summary>Pregunta 1: Selecciona els autors que han escrit llibres a un any
+      superior al 2003 sense contar aquest i que el seu preu sigui inferior a 30 incluint-lo com a valor.</summary>
+    <br><strong>XPATH: </strong> //book[year&gt;2003 and price&lt;=30]/author/text() <br>
+    <br><strong>Output:</strong> <br>
+    Text='Giada De Laurentiis'
+    Text='J K. Rowling'
+  </details>
+  <br>
+  <details>
+    <summary>Pregunta 2: Selecciona els llibres que siguin mes cars que 35 euros i que tinguin 5 autors). </summary>
+    <br><strong>XPATH: </strong> //book[price>35 and count(author) = 5]/title/text() <br>
+    <br><strong>Output:</strong> <br>
+    Text='XQuery Kick Start'
+  </details>
+
   <h3>Preguntes de Eric Raspall</h3>
   <details>
     <summary>Pregunta 1: Nom de l'autor de la categoria “cooking” i any de la seva publicació.</summary>
