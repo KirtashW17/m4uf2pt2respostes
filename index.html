@@ -79,6 +79,22 @@
     Int64='7'
   </details>
 
+  <h3>Preguntes de Eric Raspall</h3>
+  <details>
+    <summary>Pregunta 1: Nom de l'autor de la categoria “cooking” i any de la seva publicació.</summary>
+    <br><strong>XPATH: </strong> //book[@category='cooking']/author | //book[@category='cooking']/year <br>
+    <br><strong>Output:</strong> <br>
+    Element='&lt;author&gt;Giada De Laurentiis='&lt;/author&gt;' <br>
+    Element='&lt;year&gt;2005='&lt;/year&gt;' <br>
+  </details>
+  <br>
+  <details>
+    <summary>Pregunta 2: Número d'autors totals de tota la categoria “web”(inclou paperback) </summary>
+    <br><strong>XPATH: </strong> sum(//book[@category='web']/count(author)) <br>
+    <br><strong>Output:</strong> <br>
+    Int64='6'
+  </details>
+
   <h3>Preguntes de Thomas Scalise</h3>
   <details>
     <summary>Pregunta 1: Llista el títol i el nom del escritor de tots els llibres el preu dels cuals sigui inferior a 40€</summary>
