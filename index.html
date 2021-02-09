@@ -55,11 +55,30 @@
     <summary>Pregunta 2: Muestra los libros con categoría "children" y categoría "web" , pero que estos últimos tengan tapa "paperback"</summary>
     <br><strong>XPATH: </strong> //book[@category='children']/title/text() | //book[@category='web' and @cover='paperback']/title/text()<br>
     <br><strong>Output:</strong> <br>
-    Text='Harry Potter'
+    Text='Harry Potter' <br>
     Text='Learning XML'
   </details>
 
-  Llista el títol i el nom del escritor de tots els llibres el preu dels cuals sigui inferior a 40€
+  <h3>Preguntes de Xavier Bertran</h3>
+  <details>
+    <summary>Pregunta 1: Autors amb publicacions de l'any 2003 i preu de llibres inferior a 50€.</summary>
+    <br><strong>XPATH: </strong> //book[year=2003 and price < 50]/author/text()<br>
+    <br><strong>Output:</strong> <br>
+    Text='James McGovern' <br>
+    Text='Per Bothner' <br>
+    Text='Kurt Cagle' <br>
+    Text='James Linn' <br>
+    Text='Vaidyanathan Nagarajan' <br>
+    Text='Erik T. Ray' <br>
+  </details>
+  <br>
+  <details>
+    <summary>Pregunta 2: Nombre total d'autor@s de tots els llibres publicats menys una que li tinc mania. </summary>
+    <br><strong>XPATH: </strong> count(//author) - 1 <br>
+    <br><strong>Output:</strong> <br>
+    Int64='7'
+  </details>
+
   <h3>Preguntes de Thomas Scalise</h3>
   <details>
     <summary>Pregunta 1: Llista el títol i el nom del escritor de tots els llibres el preu dels cuals sigui inferior a 40€</summary>
